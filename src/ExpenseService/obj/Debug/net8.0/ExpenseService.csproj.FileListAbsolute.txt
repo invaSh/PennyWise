@@ -105,3 +105,5 @@ C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\s
 C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\bin\Debug\net8.0\Shared.pdb
 C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\obj\Debug\net8.0\ExpenseService.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\obj\Debug\net8.0\ExpenseS.B5CB7047.Up2Date
+C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\obj\Debug\net8.0\ExpenseService.sourcelink.json
+C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\bin\Debug\net8.0\AutoMapper.dll
