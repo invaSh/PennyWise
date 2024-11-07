@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IncomeService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b1cb9bd7f3837c52b238faae80d387a377086ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f762b3d464d46c269b7a0e3aa0ec66dab96f491")]
 [assembly: System.Reflection.AssemblyProductAttribute("IncomeService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IncomeService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
