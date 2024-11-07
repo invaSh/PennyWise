@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseService", "src\Expen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncomeService", "src\IncomeService\IncomeService.csproj", "{0705597B-3BC4-480D-A566-C14BAF2E8E19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0705597B-3BC4-480D-A566-C14BAF2E8E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0705597B-3BC4-480D-A566-C14BAF2E8E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0705597B-3BC4-480D-A566-C14BAF2E8E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0705597B-3BC4-480D-A566-C14BAF2E8E19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC} = {85BA3D0E-4B6B-4AF8-8015-1A75C844053B}
 		{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB} = {85BA3D0E-4B6B-4AF8-8015-1A75C844053B}
+		{0705597B-3BC4-480D-A566-C14BAF2E8E19} = {85BA3D0E-4B6B-4AF8-8015-1A75C844053B}
 	EndGlobalSection
 EndGlobal

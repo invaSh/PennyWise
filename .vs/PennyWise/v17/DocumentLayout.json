@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}|src\\ExpenseService\\ExpenseService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\expenseservice\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}|src\\ExpenseService\\ExpenseService.csproj|solutionrelative:src\\expenseservice\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}|src\\ExpenseService\\ExpenseService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\expenseservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}|src\\ExpenseService\\ExpenseService.csproj|solutionrelative:src\\expenseservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Migrations\\20241107085705_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\IncomeService\\Migrations\\20241107085705_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\ExpenseService\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "src\\ExpenseService\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\ExpenseService\\appsettings.Development.json",
-              "RelativeToolTip": "src\\ExpenseService\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-06T18:20:04.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ExpensesController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\ExpenseService\\Controllers\\ExpensesController.cs",
-              "RelativeDocumentMoniker": "src\\ExpenseService\\Controllers\\ExpensesController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\ExpenseService\\Controllers\\ExpensesController.cs",
-              "RelativeToolTip": "src\\ExpenseService\\Controllers\\ExpensesController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAswFkAAAAbAAAAAAAAAA==",
+              "Title": "20241107085705_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Migrations\\20241107085705_Initial.cs",
+              "RelativeDocumentMoniker": "src\\IncomeService\\Migrations\\20241107085705_Initial.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Migrations\\20241107085705_Initial.cs",
+              "RelativeToolTip": "src\\IncomeService\\Migrations\\20241107085705_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T18:16:16.681Z",
+              "WhenOpened": "2024-11-07T08:57:05.956Z",
               "EditorCaption": ""
             }
           ]
