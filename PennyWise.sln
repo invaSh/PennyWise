@@ -5,21 +5,25 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{85BA3D0E-4B6B-4AF8-8015-1A75C844053B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseService", "src\ExpenseService\ExpenseService.csproj", "{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpenseService", "src\ExpenseService\ExpenseService.csproj", "{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\Shared\Shared.csproj", "{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncomeService", "src\IncomeService\IncomeService.csproj", "{0705597B-3BC4-480D-A566-C14BAF2E8E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IncomeService", "src\IncomeService\IncomeService.csproj", "{0705597B-3BC4-480D-A566-C14BAF2E8E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoalsService", "src\GoalsService\GoalsService.csproj", "{C0A78FE2-9126-4FF1-9843-5AF3D05F3C47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoalsService", "src\GoalsService\GoalsService.csproj", "{C0A78FE2-9126-4FF1-9843-5AF3D05F3C47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A266FA7-C675-47BF-A40C-341579976795}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayService", "src\GatewayService\GatewayService.csproj", "{EB6575C1-6366-45B6-A650-188764600B7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,11 +42,22 @@ Global
 		{C0A78FE2-9126-4FF1-9843-5AF3D05F3C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0A78FE2-9126-4FF1-9843-5AF3D05F3C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0A78FE2-9126-4FF1-9843-5AF3D05F3C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6575C1-6366-45B6-A650-188764600B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6575C1-6366-45B6-A650-188764600B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6575C1-6366-45B6-A650-188764600B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6575C1-6366-45B6-A650-188764600B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC} = {85BA3D0E-4B6B-4AF8-8015-1A75C844053B}
 		{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB} = {85BA3D0E-4B6B-4AF8-8015-1A75C844053B}
 		{0705597B-3BC4-480D-A566-C14BAF2E8E19} = {85BA3D0E-4B6B-4AF8-8015-1A75C844053B}
 		{C0A78FE2-9126-4FF1-9843-5AF3D05F3C47} = {85BA3D0E-4B6B-4AF8-8015-1A75C844053B}
+		{EB6575C1-6366-45B6-A650-188764600B7B} = {85BA3D0E-4B6B-4AF8-8015-1A75C844053B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {880EB094-7CAE-4B8D-881C-3DE0B527A624}
 	EndGlobalSection
 EndGlobal
