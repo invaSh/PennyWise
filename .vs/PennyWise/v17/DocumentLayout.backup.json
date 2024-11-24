@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9A266FA7-C675-47BF-A40C-341579976795}|Solution Items{9A266FA7-C675-47BF-A40C-341579976795}|C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9A266FA7-C675-47BF-A40C-341579976795}|Solution Items{9A266FA7-C675-47BF-A40C-341579976795}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}|src\\ExpenseService\\ExpenseService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\expenseservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}|src\\ExpenseService\\ExpenseService.csproj|solutionrelative:src\\expenseservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\ExpenseService\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "src\\ExpenseService\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\ExpenseService\\appsettings.Development.json",
-              "RelativeToolTip": "src\\ExpenseService\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-21T12:14:18.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-11-21T12:03:54.964Z",
-              "EditorCaption": ""
             }
           ]
         },

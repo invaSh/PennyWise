@@ -5,7 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+});
 
 builder.Services.AddDbContext<GoalDbContext>
     (o => o.UseNpgsql(builder.Configuration.GetConnectionString("GoalSvcConnection")));

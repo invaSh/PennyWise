@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
 using ExpenseService.Data;
+using MassTransit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Shared.Consumers.Expenses;
+using Shared.Contracts.Expenses;
 using Shared.DTOs;
 using Shared.Models;
 
@@ -14,10 +17,12 @@ namespace ExpenseService.Controllers
     {
         private readonly ExpSvcDbContext _context;
         private readonly IMapper _mapper;
-        public ExpensesController(ExpSvcDbContext context, IMapper mapper)
+        private readonly IPublishEndpoint _publishEndpoint;
+        public ExpensesController(ExpSvcDbContext context, IMapper mapper, IPublishEndpoint publishEndpoint)
         {
             _context = context;
             _mapper = mapper;
+            _publishEndpoint = publishEndpoint;
         }
 
         [HttpGet]
@@ -43,6 +48,7 @@ namespace ExpenseService.Controllers
             var expense = _mapper.Map<Expense>(dto);
             _context.Expenses.Add(expense);
             var result = await _context.SaveChangesAsync() > 0;
+            await _publishEndpoint.Publish(_mapper.Map<ExpenseCreated>(expense));
             if(!result) return BadRequest("There was an error saving your expense..");
             return Ok(new {msg = "Expense saved successfully!", expense = expense });
         }
@@ -53,6 +59,8 @@ namespace ExpenseService.Controllers
             var expense = await _context.Expenses.FirstOrDefaultAsync(x => x.Id == id);
             if (expense == null) return NotFound("The requested expense does not exist..");
             _mapper.Map(dto, expense);
+            expense.Id = id;
+            await _publishEndpoint.Publish(_mapper.Map<ExpenseUpdated>(expense));
             var result = await _context.SaveChangesAsync() > 0;
             if (!result) return BadRequest("There was a problem updating the expense..");
             return Ok(new { msg = "Expense was updated!", expense = expense });
@@ -64,6 +72,7 @@ namespace ExpenseService.Controllers
             var expense = await _context.Expenses.FirstOrDefaultAsync(x => x.Id == id);
             if (expense == null) return NotFound("The requested Expense was not found!");
             _context.Expenses.Remove(expense);
+            await _publishEndpoint.Publish(_mapper.Map<ExpenseDeleted>(expense));
             var result = await _context.SaveChangesAsync() > 0;
             if (!result) return BadRequest("Couldn't delete expense");
             return Ok("Expense successfully deleted!");

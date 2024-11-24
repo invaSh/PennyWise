@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A266FA7-C675-47BF-A40C-341579976795}|Solution Items{9A266FA7-C675-47BF-A40C-341579976795}|C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9A266FA7-C675-47BF-A40C-341579976795}|Solution Items{9A266FA7-C675-47BF-A40C-341579976795}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\heatmapservice\\consumers\\expensecreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|solutionrelative:src\\heatmapservice\\consumers\\expensecreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0A78FE2-9126-4FF1-9843-5AF3D05F3C47}|src\\GoalsService\\GoalsService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\goalsservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C0A78FE2-9126-4FF1-9843-5AF3D05F3C47}|src\\GoalsService\\GoalsService.csproj|solutionrelative:src\\goalsservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\shared\\contracts\\expenses\\expensedeleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|solutionrelative:src\\shared\\contracts\\expenses\\expensedeleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\GoalsService\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "src\\GoalsService\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\GoalsService\\appsettings.Development.json",
-              "RelativeToolTip": "src\\GoalsService\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-22T11:29:20.382Z",
+              "DocumentIndex": 0,
+              "Title": "ExpenseCreatedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
+              "RelativeDocumentMoniker": "src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
+              "RelativeToolTip": "src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:16:00.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAswCYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-11-21T12:03:54.964Z",
+              "DocumentIndex": 1,
+              "Title": "ExpenseDeleted.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
+              "RelativeToolTip": "src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:14:29.207Z",
               "EditorCaption": ""
             }
           ]

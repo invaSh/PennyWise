@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Shared.Consumers.Expenses;
+using Shared.Contracts.Expenses;
 using Shared.DTOs;
 using Shared.Models;
 using System;
@@ -15,6 +17,9 @@ namespace Shared.RequestHelpers
         {
             CreateMap<Expense, ExpenseDto>();
             CreateMap<ExpenseDto, Expense>();
+            CreateMap<Expense, ExpenseCreated>();
+            CreateMap<Expense, ExpenseUpdated>();
+            CreateMap<Expense, ExpenseDeleted>();
         }
 
     }

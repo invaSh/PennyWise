@@ -1,10 +1,24 @@
 using ExpenseService.Data;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddControllers();
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+});
+
+builder.Services.AddMassTransit(x =>
+{
+    x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("expense", false));
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.ConfigureEndpoints(context);
+    });
+});
 
 builder.Services.AddDbContext<ExpSvcDbContext>
     (o=> o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));

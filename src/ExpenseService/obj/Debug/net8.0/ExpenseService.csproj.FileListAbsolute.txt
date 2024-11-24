@@ -107,3 +107,7 @@ C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\s
 C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\obj\Debug\net8.0\ExpenseS.B5CB7047.Up2Date
 C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\obj\Debug\net8.0\ExpenseService.sourcelink.json
 C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\bin\Debug\net8.0\MassTransit.dll
+C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\bin\Debug\net8.0\MassTransit.Abstractions.dll
+C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
+C:\Users\Admin\Desktop\projekte\.NET_Microservices_Next.js_PennyWise\PennyWise\src\ExpenseService\bin\Debug\net8.0\RabbitMQ.Client.dll
