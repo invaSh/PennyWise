@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\heatmapservice\\consumers\\expensecreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|solutionrelative:src\\heatmapservice\\consumers\\expensecreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}|src\\ExpenseService\\ExpenseService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\expenseservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{123D9A9E-2B2C-4585-AE39-BFC1C3B834DC}|src\\ExpenseService\\ExpenseService.csproj|solutionrelative:src\\expenseservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\shared\\contracts\\expenses\\expensedeleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|solutionrelative:src\\shared\\contracts\\expenses\\expensedeleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\heatmapservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|solutionrelative:src\\heatmapservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\heatmapservice\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|solutionrelative:src\\heatmapservice\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6575C1-6366-45B6-A650-188764600B7B}|src\\GatewayService\\GatewayService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\gatewayservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB6575C1-6366-45B6-A650-188764600B7B}|src\\GatewayService\\GatewayService.csproj|solutionrelative:src\\gatewayservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,36 +26,62 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "src\\HeatmapService\\Data\\DataSeeder.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "src\\HeatmapService\\Data\\DataSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T18:38:29.777Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExpenseCreatedConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
-              "RelativeDocumentMoniker": "src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
-              "RelativeToolTip": "src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Program.cs",
+              "RelativeDocumentMoniker": "src\\HeatmapService\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Program.cs",
+              "RelativeToolTip": "src\\HeatmapService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T11:16:00.069Z",
+              "WhenOpened": "2024-11-24T18:39:02.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExpenseDeleted.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
-              "RelativeToolTip": "src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\ExpenseService\\Program.cs",
+              "RelativeDocumentMoniker": "src\\ExpenseService\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\ExpenseService\\Program.cs",
+              "RelativeToolTip": "src\\ExpenseService\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T11:14:29.207Z",
+              "WhenOpened": "2024-11-24T18:38:34.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\GatewayService\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\GatewayService\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\GatewayService\\appsettings.json",
+              "RelativeToolTip": "src\\GatewayService\\appsettings.json",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswDwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-24T18:34:26.073Z",
               "EditorCaption": ""
             }
           ]
