@@ -1,5 +1,6 @@
+import "animate.css"
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Navbar";
 
 export const metadata = {
   title: "Pennywise",
@@ -13,8 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar/>
-        {children}
+        <Sidebar>{children}</Sidebar>
       </body>
     </html>
   );

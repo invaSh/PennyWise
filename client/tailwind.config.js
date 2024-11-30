@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        tektur: ["Tektur"]
+        tektur: ["Tektur"],
+        flex: ["Roboto Flex"],
+        hat: ["Red Hat Display"],
+        righteous: ["Righteous"],
       }
     },
   },
