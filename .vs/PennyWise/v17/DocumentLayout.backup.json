@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\heatmapservice\\consumers\\expensecreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46F3C318-337B-4EC6-8D41-30B5D538E8ED}|src\\HeatmapService\\HeatmapService.csproj|solutionrelative:src\\heatmapservice\\consumers\\expensecreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\shared\\contracts\\expenses\\expensedeleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|solutionrelative:src\\shared\\contracts\\expenses\\expensedeleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExpenseCreatedConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
-              "RelativeDocumentMoniker": "src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
-              "RelativeToolTip": "src\\HeatmapService\\Consumers\\ExpenseCreatedConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T11:16:00.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExpenseDeleted.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
-              "RelativeToolTip": "src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T11:14:29.207Z",
-              "EditorCaption": ""
             }
           ]
         },
