@@ -5,8 +5,20 @@ async function get(url) {
     method: "GET",
   };
   const response = await fetch(baseUrl + url, requestOptions);
-
   return await handleResponse(response);
+}
+
+async function post(url, body){
+  const requestOptions= {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body)
+  }
+  const response = await fetch(baseUrl + url, requestOptions);
+  
+  return handleResponse(response);
 }
 
 async function handleResponse(response) {
@@ -35,4 +47,5 @@ async function handleResponse(response) {
 
 export const fetchWrapper = {
   get,
+  post,
 };

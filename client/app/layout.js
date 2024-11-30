@@ -1,4 +1,6 @@
 import "animate.css"
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import 'flowbite/dist/flowbite.css';
 import "./globals.css";
 import Sidebar from "@/components/Navbar";
 

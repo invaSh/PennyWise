@@ -7,13 +7,12 @@ import {
   FileText,
   DollarSign,
   Target,
-} from "lucide-react"; // Import the required icons
+} from "lucide-react";
 import Link from "next/link";
 
 function Sidebar({ children }) {
   const [open, setOpen] = useState(true);
 
-  // Update Menus to include icon and title
   const Menus = [
     { title: "Expenses", href: "/expenses", icon: <FileText size={20} /> },
     { title: "Incomes", href: "/incomes", icon: <DollarSign size={20} /> },
