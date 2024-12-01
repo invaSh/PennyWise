@@ -21,6 +21,33 @@ async function post(url, body){
   return handleResponse(response);
 }
 
+async function put(url, body){
+  const requestOptions= {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body)
+  }
+  
+  const response = await fetch(baseUrl + url, requestOptions);
+  
+  return handleResponse(response);
+}
+
+async function del(url){
+  const requestOptions= {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }
+  
+  const response = await fetch(baseUrl + url, requestOptions);
+  
+  return handleResponse(response);
+}
+
 async function handleResponse(response) {
     const text = await response.text();
   
@@ -48,4 +75,6 @@ async function handleResponse(response) {
 export const fetchWrapper = {
   get,
   post,
+  put,
+  del
 };

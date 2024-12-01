@@ -41,7 +41,7 @@ function Create() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-8">
       <Alert message={message} messageType={messageType} />
-      <div className="bg-black p-8 rounded-xl shadow-lg w-full max-w-md">
+      <div className="bg-black p-8 rounded-xl shadow-lg w-full max-w-md animate__animated animate__fadeInDown">
         <h2 className="text-2xl font-bold text-yellow-300 mb-6 text-center">
           Add Expense
         </h2>
@@ -56,13 +56,13 @@ function Create() {
               onChange={(e) => setCategory(Number(e.target.value))}
               className="mt-2 w-full px-4 py-2 text-white bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             >
-              <option value={1}>Food</option>
-              <option value={2}>Transportation</option>
-              <option value={3}>Entertainment</option>
-              <option value={4}>Utilities</option>
-              <option value={5}>Healthcare</option>
-              <option value={6}>Education</option>
-              <option value={7}>Miscellaneous</option>
+              <option value={0}>Food</option>
+              <option value={1}>Transportation</option>
+              <option value={2}>Entertainment</option>
+              <option value={3}>Utilities</option>
+              <option value={4}>Healthcare</option>
+              <option value={5}>Education</option>
+              <option value={6}>Miscellaneous</option>
             </select>
           </div>
 

@@ -7,3 +7,15 @@ export async function getExpenses(){
 export async function createExpense(body){
     return fetchWrapper.post("expenses", body);
 }
+
+export async function getExpense(id){
+    return fetchWrapper.get(`expenses/${id}`);
+}
+
+export async function updateExpense(id, body){
+    return fetchWrapper.put(`expenses/${id}`, body);
+}
+
+export async function deleteExpense(id){
+    return fetchWrapper.del(`expenses/${id}`);
+}
