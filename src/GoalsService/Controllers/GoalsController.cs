@@ -41,10 +41,26 @@ namespace GoalsService.Controllers
         {
             if (dto == null) return BadRequest("No goal was submitted!");
             var goal = _mapper.Map<Goal>(dto);
+            goal.CreatedDate = DateTime.UtcNow;
+            Console.WriteLine($"Created Date (UTC): {goal.CreatedDate}");
+            goal.TargetDate = DateTime.SpecifyKind(goal.TargetDate, DateTimeKind.Utc);
+            goal.Status = GoalStatus.Active;
             _context.Goals.Add(goal);
             var result = await _context.SaveChangesAsync() > 0;
             if (!result) return BadRequest("There was an error saving your goal..");
             return Ok(new { msg = "Goal saved successfully!", goal = goal });
+        }
+
+        [HttpPut("status/{id}")]
+        public async Task<ActionResult> ChangeStatus(int id, StatusDto status)
+        {
+            Console.WriteLine($"=====> {status.status} {id}");
+            var goal = await _context.Goals.FirstOrDefaultAsync(x => x.Id == id);
+            if (goal == null) return NotFound("The requested goal does not exist..");
+            goal.Status = status.status;
+            var result = await _context.SaveChangesAsync() > 0;
+            if (!result) return BadRequest("There was a problem updating the expense..");
+            return Ok(new { msg = "Status was updated!", goal = goal });
         }
 
         [HttpPut("{id}")]
@@ -55,7 +71,7 @@ namespace GoalsService.Controllers
             _mapper.Map(dto, goal);
             var result = await _context.SaveChangesAsync() > 0;
             if (!result) return BadRequest("There was a problem updating the expense..");
-            return Ok(new { msg = "Expense was updated!", expegoalnse = goal });
+            return Ok(new { msg = "Expense was updated!", goal = goal });
         }
 
         [HttpDelete("{id}")]

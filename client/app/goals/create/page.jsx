@@ -1,34 +1,38 @@
 "use client";
 
 import React, { useState } from "react";
-import { createExpense } from "@/app/actions/expenseActions";
+import { createGoal } from "@/app/actions/goalsActions";
 import Alert from "@/components/Alert";
 
 function Create() {
-  const [category, setCategory] = useState(1);
-  const [amount, setAmount] = useState("");
-  const [date, setDate] = useState("");
+  const [name, setName] = useState("");
+  const [targetAmount, setTargetAmount] = useState("");
+  const [currentAmount, setCurrentAmount] = useState("");
+  const [targetDate, setTargetDate] = useState("");
   const [description, setDescription] = useState("");
-  const [message, setMessage] = useState(""); 
+  const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = {
-      category,
-      amount: parseFloat(amount),
-      date: new Date(date).toISOString(),
+      name,
+      targetAmount: parseFloat(targetAmount),
+      currentAmount: parseFloat(currentAmount),
+      targetDate: new Date(targetDate).toISOString(),
       description,
     };
 
     try {
-      const response = await createExpense(formData);
+      const response = await createGoal(formData);
       if (response.error) {
-        setMessage("Failed to create expense. Please try again!");
+        console.log("error-->", response);
+        setMessage("Failed to create goal. Please try again!");
         setMessageType("error");
       } else {
-        setMessage("Expense created successfully!");
+        console.log("success-->", response);
+        setMessage("Goal created successfully!");
         setMessageType("success");
       }
     } catch (error) {
@@ -40,62 +44,79 @@ function Create() {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-8">
-      <Alert message={message} messageType={messageType} redirection={`expenses`} />
-      <div className="bg-black p-8 rounded-xl shadow-lg w-full max-w-md animate__animated animate__fadeInDown">
+      <Alert message={message} messageType={messageType} redirection={`goals`}/>
+      <div className="bg-black p-8 rounded-xl shadow-lg w-full max-w-4xl animate__animated animate__fadeInDown">
         <h2 className="text-2xl font-bold text-yellow-300 mb-6 text-center">
-          Add Expense
+          Add Goal
         </h2>
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className="mb-4">
-            <label htmlFor="category" className="block text-sm text-yellow-200">
-              Category
+            <label htmlFor="name" className="block text-sm text-yellow-200">
+              Name
             </label>
-            <select
-              id="category"
-              value={category}
-              onChange={(e) => setCategory(Number(e.target.value))}
+            <input
+              id="name"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
               className="mt-2 w-full px-4 py-2 text-white bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            >
-              <option value={0}>Food</option>
-              <option value={1}>Transportation</option>
-              <option value={2}>Entertainment</option>
-              <option value={3}>Utilities</option>
-              <option value={4}>Healthcare</option>
-              <option value={5}>Education</option>
-              <option value={6}>Miscellaneous</option>
-            </select>
+            />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="amount" className="block text-sm text-yellow-200">
-              Amount
+            <label
+              htmlFor="targetAmount"
+              className="block text-sm text-yellow-200"
+            >
+              Target Amount
             </label>
             <input
-              id="amount"
+              id="targetAmount"
               type="number"
               step="0.01"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
+              value={targetAmount}
+              onChange={(e) => setTargetAmount(e.target.value)}
               required
               className="mt-2 w-full px-4 py-2 text-white bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="date" className="block text-sm text-yellow-200">
-              Date
+            <label
+              htmlFor="currentAmount"
+              className="block text-sm text-yellow-200"
+            >
+              Current Amount
             </label>
             <input
-              id="date"
-              type="datetime-local"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
+              id="currentAmount"
+              type="number"
+              step="0.01"
+              value={currentAmount}
+              onChange={(e) => setCurrentAmount(e.target.value)}
               required
               className="mt-2 w-full px-4 py-2 text-white bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
           </div>
 
-          <div className="mb-6">
+          <div className="mb-4">
+            <label
+              htmlFor="targetDate"
+              className="block text-sm text-yellow-200"
+            >
+              Target Date
+            </label>
+            <input
+              id="targetDate"
+              type="datetime-local"
+              value={targetDate}
+              onChange={(e) => setTargetDate(e.target.value)}
+              required
+              className="mt-2 w-full px-4 py-2 text-white bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+          </div>
+          <div className="mb-4">
             <label
               htmlFor="description"
               className="block text-sm text-yellow-200"
@@ -111,7 +132,6 @@ function Create() {
               rows="4"
             />
           </div>
-
           <div className="text-center">
             <button
               type="submit"
