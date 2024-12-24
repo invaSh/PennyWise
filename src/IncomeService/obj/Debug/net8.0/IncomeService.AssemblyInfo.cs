@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IncomeService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c669e7898ef2ccae242ab088153aae5f360142af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d20f0517858992852017982826a73052a5f2d6f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("IncomeService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IncomeService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

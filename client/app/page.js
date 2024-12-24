@@ -1,5 +1,11 @@
+import Cards from '@/sections/Cards';
+import Charts from '@/sections/Charts';
+
 export default function Home() {
   return (
-    <div></div>
+    <main className="flex flex-col gap-4">
+      <Cards/>
+      <Charts/>
+    </main>
   );
 }
