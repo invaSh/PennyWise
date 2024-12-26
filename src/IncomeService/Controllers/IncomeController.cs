@@ -53,6 +53,7 @@ namespace IncomeService.Controllers
         {
             var income = await _context.Incomes.FirstOrDefaultAsync(x => x.Id == id);
             if (income == null) return NotFound("The requested income does not exist..");
+            dto.DateReceived = DateTime.UtcNow;
             _mapper.Map(dto, income);
             var result = await _context.SaveChangesAsync() > 0;
             if (!result) return BadRequest("There was a problem updating the income..");

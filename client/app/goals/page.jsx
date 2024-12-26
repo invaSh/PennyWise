@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { getGoals } from '../actions/goalsActions';
 import { MoreVertical, Trash2, FilePenLine } from 'lucide-react';
 import GoalModal from '@/components/GoalModal';
-import Alert from '@/components/Alert';
 
 function List({ searchParams }) {
   const [goals, setGoals] = useState([]);
@@ -99,6 +98,10 @@ function List({ searchParams }) {
             <h2 className="text-yellow-300 text-lg font-semibold">
               {goal.name}
             </h2>
+            <p className="text-gray-300 mt-2">
+              Goal Status:{' '}
+              <span className="text-yellow-300">{goal.status}</span>
+            </p>
             <p className="text-gray-300 mt-2">
               Target Amount:{' '}
               <span className="text-yellow-300">${goal.targetAmount}</span>
