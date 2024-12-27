@@ -1,4 +1,3 @@
-using ExpenseService.Data;
 using HeatmapService.Consumers;
 using HeatmapService.Data;
 using MassTransit;

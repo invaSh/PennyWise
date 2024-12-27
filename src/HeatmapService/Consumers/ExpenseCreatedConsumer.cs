@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using HeatmapService.Data;
 using MassTransit;
-using Shared.Consumers.Expenses;
-using Shared.Models;
+using Shared.Contracts.Expenses;
+using HeatmapService.Models;
 
 namespace HeatmapService.Consumers
 {

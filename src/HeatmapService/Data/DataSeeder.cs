@@ -1,7 +1,7 @@
 ﻿using HeatmapService.Data;
-using Shared.Models;
+using HeatmapService.Models;
 
-namespace ExpenseService.Data
+namespace HeatmapService.Data
 {
     public class DataSeeder
     {

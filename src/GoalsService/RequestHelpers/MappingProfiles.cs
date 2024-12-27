@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Shared.DTOs;
-using Shared.Models;
+using GoalsService.DTOs;
+using GoalsService.Models;
 
 namespace GoalsService.RequestHelpers
 {

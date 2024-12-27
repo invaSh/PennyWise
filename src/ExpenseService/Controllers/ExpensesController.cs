@@ -1,13 +1,11 @@
 ﻿using AutoMapper;
 using ExpenseService.Data;
 using MassTransit;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Shared.Consumers.Expenses;
 using Shared.Contracts.Expenses;
-using Shared.DTOs;
-using Shared.Models;
+using ExpenseService.DTOs;
+using ExpenseService.Models;
 
 namespace ExpenseService.Controllers
 {
@@ -81,7 +79,7 @@ namespace ExpenseService.Controllers
         [HttpGet("category/{cat}")]
         public async Task<ActionResult> GetExpByCategory(Category cat)
         {
-            var expenses = await _context.Expenses.Where(x => x.Category == cat).ToListAsync();
+            var expenses = await _context.Expenses.Where(x => x.Category.Equals(cat)).ToListAsync();
             if (expenses.Count <= 0) return NotFound("No expenses where found!");
             return Ok(expenses);
         }

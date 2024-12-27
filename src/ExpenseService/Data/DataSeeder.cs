@@ -1,4 +1,4 @@
-﻿using Shared.Models;
+﻿using ExpenseService.Models;
 
 namespace ExpenseService.Data
 {

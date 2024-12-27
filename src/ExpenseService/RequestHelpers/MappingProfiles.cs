@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
-using Shared.Consumers.Expenses;
 using Shared.Contracts.Expenses;
-using Shared.DTOs;
-using Shared.Models;
+using ExpenseService.DTOs;
+using ExpenseService.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

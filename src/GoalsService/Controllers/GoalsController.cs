@@ -3,8 +3,8 @@ using GoalsService.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Shared.DTOs;
-using Shared.Models;
+using GoalsService.DTOs;
+using GoalsService.Models;
 
 namespace GoalsService.Controllers
 {

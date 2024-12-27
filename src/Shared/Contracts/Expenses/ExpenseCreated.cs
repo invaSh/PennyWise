@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shared.Consumers.Expenses
+namespace Shared.Contracts.Expenses
 {
     public class ExpenseCreated
     {

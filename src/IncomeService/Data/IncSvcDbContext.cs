@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Shared.Models;
+﻿using IncomeService.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace IncomeService.Data
 {

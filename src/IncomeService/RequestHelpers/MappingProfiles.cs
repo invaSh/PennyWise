@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Shared.DTOs;
-using Shared.Models;
+using IncomeService.Models;
+using IncomeService.DTOs;
 
 namespace IncomeService.RequestHelpers
 {

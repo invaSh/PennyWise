@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Shared.Models;
+using ExpenseService.Models;
 
 namespace ExpenseService.Data
 {

@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
 using IncomeService.Data;
-using Microsoft.AspNetCore.Http;
+using IncomeService.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Shared.DTOs;
-using Shared.Models;
+using IncomeService.DTOs;
 
 namespace IncomeService.Controllers
 {
@@ -42,6 +41,7 @@ namespace IncomeService.Controllers
         {
             if (dto == null) return BadRequest("No income was submitted!");
             var income = _mapper.Map<Income>(dto);
+            income.DateReceived = DateTime.UtcNow;
             _context.Incomes.Add(income);
             var result = await _context.SaveChangesAsync() > 0;
             if (!result) return BadRequest("There was an error saving your income..");

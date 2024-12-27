@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
-using Shared.Consumers.Expenses;
 using Shared.Contracts.Expenses;
-using Shared.Models;
+using HeatmapService.Models;
 
 namespace HeatmapService.RequestHelpers
 {
