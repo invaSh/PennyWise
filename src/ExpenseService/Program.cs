@@ -1,5 +1,6 @@
 using ExpenseService.Consumers;
 using ExpenseService.Data;
+using ExpenseService.ServiceHelpers;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
@@ -34,6 +35,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<ExpSvcDbContext>
     (o=> o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<ServiceHelper>();
 
 var app = builder.Build();
 

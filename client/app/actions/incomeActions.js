@@ -24,6 +24,3 @@ export async function getBalance(){
     return fetchWrapper.get("income/balance");
 } 
 
-export async function getMonthlyExpenses(){
-    return fetchWrapper.get("income/expenses");
-}

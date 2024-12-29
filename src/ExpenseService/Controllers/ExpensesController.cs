@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Shared.Contracts.Expenses;
 using ExpenseService.DTOs;
 using ExpenseService.Models;
+using ExpenseService.ServiceHelpers;
 
 namespace ExpenseService.Controllers
 {
@@ -16,11 +17,13 @@ namespace ExpenseService.Controllers
         private readonly ExpSvcDbContext _context;
         private readonly IMapper _mapper;
         private readonly IPublishEndpoint _publishEndpoint;
-        public ExpensesController(ExpSvcDbContext context, IMapper mapper, IPublishEndpoint publishEndpoint)
+        private readonly ServiceHelper _serviceHelper;
+        public ExpensesController(ExpSvcDbContext context, IMapper mapper, IPublishEndpoint publishEndpoint, ServiceHelper serviceHelper)
         {
             _context = context;
             _mapper = mapper;
             _publishEndpoint = publishEndpoint;
+            _serviceHelper = serviceHelper;
         }
 
         [HttpGet]
@@ -96,6 +99,13 @@ namespace ExpenseService.Controllers
                 sum += expense.Amount;
             }
             return Ok(sum);
+        }
+
+        [HttpGet("monthly")]
+        public async Task<ActionResult<decimal>> GetTotalExpense()
+        {
+            var total = await _serviceHelper.GetTotalSinceLastPaycheck();
+            return Ok(total);
         }
 
     }

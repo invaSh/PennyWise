@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '@/components/dashboard/Card';
-import { getBalance, getMonthlyExpenses } from '@/app/actions/incomeActions';
+import { getBalance } from '@/app/actions/incomeActions';
+import { getMonthlyExpenses } from '@/app/actions/expenseActions';
 
 async function Cards() {
   const balance = await getBalance();
