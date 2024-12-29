@@ -92,5 +92,19 @@ namespace IncomeService.Controllers
             var balance = await _context.Balances.FirstOrDefaultAsync();
             return Ok(balance.CurrentBalance);
         }
+        
+        [HttpGet("expenses")]
+        public async Task<ActionResult<decimal>> GetExpense()
+        {
+            var lastPayDate = await _context.Incomes
+                .Where(i => i.Type.Equals("Salary"))
+                .OrderByDescending(i => i.DateReceived)
+                .Select(i => i.DateReceived)
+                .FirstOrDefaultAsync();
+            var total = await _context.Expenses
+                .Where(e => e.Date >= lastPayDate)
+                .SumAsync(e => e.Amount);
+            return Ok(total);
+        }
     }
 }

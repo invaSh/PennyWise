@@ -45,6 +45,7 @@ namespace ExpenseService.Controllers
             if (dto == null) return BadRequest("No Expense was submitted!");
             var expense = _mapper.Map<Expense>(dto);
             _context.Expenses.Add(expense);
+            expense.Date = DateTime.UtcNow;
             var result = await _context.SaveChangesAsync() > 0;
             await _publishEndpoint.Publish(_mapper.Map<ExpenseCreated>(expense));
             if(!result) return BadRequest("There was an error saving your expense..");

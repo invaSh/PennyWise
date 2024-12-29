@@ -19,9 +19,9 @@ namespace IncomeService.Consumers
 
         public async Task Consume(ConsumeContext<ExpenseDeleted> context)
         {
-            Console.WriteLine("===>Consuming deleted expense with id " + context.Message.Id);
             var balance = await _context.Balances.SingleOrDefaultAsync();
             var lastPayDate =  await _context.Incomes
+                .Where(i => i.Type.Equals("Salary"))
                 .OrderByDescending(i => i.DateReceived)
                 .Select(i => i.DateReceived)
                 .FirstOrDefaultAsync();

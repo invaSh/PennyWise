@@ -57,7 +57,7 @@ async function List({ searchParams }) {
                     #{expense.id}
                   </td>
                   <td className="p-4 border-b border-yellow-300 bg-black text-yellow-100 font-semibold">
-                    ${expense.amount}
+                    €{expense.amount}
                   </td>
                   <td className="p-4 border-b border-yellow-300 bg-black text-yellow-300">
                     {expense.category}

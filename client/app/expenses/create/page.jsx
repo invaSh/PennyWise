@@ -7,7 +7,6 @@ import Alert from "@/components/Alert";
 function Create() {
   const [category, setCategory] = useState(1);
   const [amount, setAmount] = useState("");
-  const [date, setDate] = useState("");
   const [description, setDescription] = useState("");
   const [message, setMessage] = useState(""); 
   const [messageType, setMessageType] = useState("");
@@ -18,7 +17,6 @@ function Create() {
     const formData = {
       category,
       amount: parseFloat(amount),
-      date: new Date(date).toISOString(),
       description,
     };
 
@@ -76,20 +74,6 @@ function Create() {
               step="0.01"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              required
-              className="mt-2 w-full px-4 py-2 text-white bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            />
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="date" className="block text-sm text-yellow-200">
-              Date
-            </label>
-            <input
-              id="date"
-              type="datetime-local"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
               required
               className="mt-2 w-full px-4 py-2 text-white bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
