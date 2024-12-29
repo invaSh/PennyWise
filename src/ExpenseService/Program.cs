@@ -1,3 +1,4 @@
+using ExpenseService.Consumers;
 using ExpenseService.Data;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 
 builder.Services.AddMassTransit(x =>
 {
+    x.AddConsumersFromNamespaceContaining<IncomeCreatedConsumer>();
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("expense", false));
     x.UsingRabbitMq((context, cfg) =>
     {
@@ -39,12 +41,4 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.MapControllers();
 
-//using (var scope = app.Services.CreateScope())
-//{
-//    var services = scope.ServiceProvider;
-//    var context = services.GetRequiredService<ExpSvcDbContext>();
-
-//    var seeder = new DataSeeder(context);
-//    await seeder.SeedExpensesAsync();
-//}
 app.Run();

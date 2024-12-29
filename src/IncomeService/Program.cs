@@ -1,6 +1,7 @@
 using IncomeService.Consumers;
 using IncomeService.Data;
 using IncomeService.Models;
+using IncomeService.Services;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
@@ -27,6 +28,7 @@ builder.Services.AddMassTransit(x =>
         cfg.ConfigureEndpoints(context);
     });
 });
+builder.Services.AddScoped<ServiceHelpers>();
 
 var app = builder.Build();
 

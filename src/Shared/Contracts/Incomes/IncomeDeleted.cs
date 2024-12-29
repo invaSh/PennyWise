@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Shared.Contracts.Incomes
 {
-    internal class IncomeDeleted
+    public class IncomeDeleted
     {
+        public int Id { get; set; }
+        public decimal Amount { get; set; }
+
     }
 }

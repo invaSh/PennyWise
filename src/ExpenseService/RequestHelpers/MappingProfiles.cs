@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Shared.Contracts.Incomes;
 
 namespace Shared.RequestHelpers
 {
@@ -19,6 +20,9 @@ namespace Shared.RequestHelpers
             CreateMap<Expense, ExpenseCreated>();
             CreateMap<Expense, ExpenseUpdated>();
             CreateMap<Expense, ExpenseDeleted>();
+            CreateMap<IncomeCreated, Income>();
+            CreateMap<IncomeUpdated, Income>();
+            CreateMap<IncomeDeleted, Income>();
         }
 
     }

@@ -28,7 +28,7 @@ namespace IncomeService.Consumers
                 balance.CurrentBalance -= context.Message.Amount;
             }
             var result = await _context.SaveChangesAsync() > 0;
-            if (result) Console.WriteLine("==>Expense Updated");
+            if (!result) throw new InvalidOperationException("There was an error saving the expense to the database.");
         }
     }
    

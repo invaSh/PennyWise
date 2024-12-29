@@ -4,6 +4,11 @@ using IncomeService.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using IncomeService.DTOs;
+using System.Runtime.CompilerServices;
+using MassTransit.Internals;
+using IncomeService.Services;
+using MassTransit;
+using Shared.Contracts.Incomes;
 
 namespace IncomeService.Controllers
 {
@@ -13,15 +18,19 @@ namespace IncomeService.Controllers
     {
         private readonly IncSvcDbContext _context;
         private readonly IMapper _mapper;
-        public IncomeController(IncSvcDbContext context, IMapper mapper)
+        private readonly ServiceHelpers _serviceHelper;
+        private readonly IPublishEndpoint _publishEndpoint;
+        public IncomeController(IncSvcDbContext context, IMapper mapper, ServiceHelpers serviceHelper, IPublishEndpoint publishEndpoint)
         {
             _context = context;
             _mapper = mapper;
+            _serviceHelper = serviceHelper;
+            _publishEndpoint = publishEndpoint;
         }
 
 
         [HttpGet]
-        public async Task<ActionResult> GetExpenses()
+        public async Task<ActionResult> GetIncomes()
         {
             var incomes = await _context.Incomes.ToListAsync();
             if (incomes.Count == 0) return NotFound("No incomes");
@@ -29,7 +38,7 @@ namespace IncomeService.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult> GetExpense(int id)
+        public async Task<ActionResult> GetIncome(int id)
         {
             var income = await _context.Incomes.FirstOrDefaultAsync(x => x.Id == id);
             if (income == null) return NotFound("Such an income does not exist!");
@@ -46,6 +55,7 @@ namespace IncomeService.Controllers
             _context.Incomes.Add(income);
             balance.CurrentBalance += income.Amount;
             var result = await _context.SaveChangesAsync() > 0;
+            await _publishEndpoint.Publish(_mapper.Map<IncomeCreated>(income));
             if (!result) return BadRequest("There was an error saving your income..");
             return Ok(new { msg = "Income saved successfully!", income = income });
         }
@@ -53,11 +63,20 @@ namespace IncomeService.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateIncome(int id, IncomeDto dto)
         {
+            var balance = await _context.Balances.SingleOrDefaultAsync();
             var income = await _context.Incomes.FirstOrDefaultAsync(x => x.Id == id);
+            var oldIncomeAmount = income.Amount; 
             if (income == null) return NotFound("The requested income does not exist..");
             dto.DateReceived = DateTime.UtcNow;
             _mapper.Map(dto, income);
+            if(oldIncomeAmount != income.Amount)
+            {
+                balance.CurrentBalance -= oldIncomeAmount;
+                balance.CurrentBalance += income.Amount;
+
+            }
             var result = await _context.SaveChangesAsync() > 0;
+            await _publishEndpoint.Publish(_mapper.Map<IncomeUpdated>(income));
             if (!result) return BadRequest("There was a problem updating the income..");
             return Ok(new { msg = "Expense was updated!", income = income });
         }
@@ -65,10 +84,13 @@ namespace IncomeService.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteIncome(int id)
         {
+            var balance = await _context.Balances.FirstOrDefaultAsync();
             var income = await _context.Incomes.FirstOrDefaultAsync(x => x.Id == id);
             if (income == null) return NotFound("The requested income was not found!");
             _context.Incomes.Remove(income);
-            var result = await _context.SaveChangesAsync() > 0;
+            if(balance.CurrentBalance != 0) balance.CurrentBalance -= income.Amount;
+            var result = await _context.SaveChangesAsync() > 0; 
+            await _publishEndpoint.Publish(_mapper.Map<IncomeDeleted>(income));
             if (!result) return BadRequest("Couldn't delete income");
             return Ok("Income successfully deleted!");
         }
@@ -94,16 +116,9 @@ namespace IncomeService.Controllers
         }
         
         [HttpGet("expenses")]
-        public async Task<ActionResult<decimal>> GetExpense()
+        public async Task<ActionResult<decimal>> GetTotalExpense()
         {
-            var lastPayDate = await _context.Incomes
-                .Where(i => i.Type.Equals("Salary"))
-                .OrderByDescending(i => i.DateReceived)
-                .Select(i => i.DateReceived)
-                .FirstOrDefaultAsync();
-            var total = await _context.Expenses
-                .Where(e => e.Date >= lastPayDate)
-                .SumAsync(e => e.Amount);
+            var total = await _serviceHelper.GetTotalSinceLastPaycheck();
             return Ok(total);
         }
     }
