@@ -1,12 +1,14 @@
 import React from 'react';
 import Card from '@/components/dashboard/Card';
+import { getBalance } from '@/app/actions/incomeActions';
 
-function Cards() {
+async function Cards() {
+  const balance = await getBalance();
   return (
     <section className="flex justify-center gap-5">
       <Card
         title="Total Balance"
-        value="$5,678"
+        value={`€${balance}`}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"

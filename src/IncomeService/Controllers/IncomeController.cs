@@ -40,9 +40,11 @@ namespace IncomeService.Controllers
         public async Task<ActionResult> CreateIncome(IncomeDto dto)
         {
             if (dto == null) return BadRequest("No income was submitted!");
+            var balance = await _context.Balances.FirstOrDefaultAsync();
             var income = _mapper.Map<Income>(dto);
             income.DateReceived = DateTime.UtcNow;
             _context.Incomes.Add(income);
+            balance.CurrentBalance += income.Amount;
             var result = await _context.SaveChangesAsync() > 0;
             if (!result) return BadRequest("There was an error saving your income..");
             return Ok(new { msg = "Income saved successfully!", income = income });
@@ -82,6 +84,13 @@ namespace IncomeService.Controllers
                 sum += income.Amount;
             }
             return Ok(sum);
+        }
+
+        [HttpGet("balance")]
+        public async Task<ActionResult> GetBalance()
+        {
+            var balance = await _context.Balances.FirstOrDefaultAsync();
+            return Ok(balance.CurrentBalance);
         }
     }
 }

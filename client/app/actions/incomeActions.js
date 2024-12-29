@@ -19,3 +19,7 @@ export async function updateIncome(id, body){
 export async function deleteIncome(id){
     return fetchWrapper.del(`income/${id}`);
 }
+
+export async function getBalance(){
+    return fetchWrapper.get("income/balance");
+} 

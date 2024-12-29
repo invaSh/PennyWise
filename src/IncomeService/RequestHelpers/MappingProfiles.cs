@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using IncomeService.Models;
 using IncomeService.DTOs;
+using Shared.Contracts.Expenses;
 
 namespace IncomeService.RequestHelpers
 {
@@ -10,6 +11,8 @@ namespace IncomeService.RequestHelpers
         {
             CreateMap<Income, IncomeDto>();
             CreateMap<IncomeDto, Income>();
+            CreateMap<ExpenseCreated, Expense>();
+            CreateMap<ExpenseUpdated, Expense>();
         }
     }
 }

@@ -3,6 +3,7 @@
     public enum IncomeType
     {
         Salary,
-        Freelance
+        Freelance,
+        Other
     }
 }

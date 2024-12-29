@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\shared\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|solutionrelative:src\\shared\\models\\income.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\incomeservice\\consumers\\expenseupdatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|solutionrelative:src\\incomeservice\\consumers\\expenseupdatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\incomeservice\\controllers\\incomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|solutionrelative:src\\incomeservice\\controllers\\incomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\incomeservice\\requesthelpers\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|solutionrelative:src\\incomeservice\\requesthelpers\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\incomeservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|solutionrelative:src\\incomeservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\incomeservice\\consumers\\expensecreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|solutionrelative:src\\incomeservice\\consumers\\expensecreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB6575C1-6366-45B6-A650-188764600B7B}|src\\GatewayService\\GatewayService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\gatewayservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EB6575C1-6366-45B6-A650-188764600B7B}|src\\GatewayService\\GatewayService.csproj|solutionrelative:src\\gatewayservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\incomeservice\\consumers\\expensedeletedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|solutionrelative:src\\incomeservice\\consumers\\expensedeletedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\incomeservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|solutionrelative:src\\incomeservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\shared\\contracts\\expenses\\expensedeleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61A8DA7A-7404-41DC-AAE1-4A987AB01DCB}|src\\Shared\\Shared.csproj|solutionrelative:src\\shared\\contracts\\expenses\\expensedeleted.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,53 +42,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Dockerfile",
-              "RelativeDocumentMoniker": "src\\IncomeService\\Dockerfile",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Dockerfile",
-              "RelativeToolTip": "src\\IncomeService\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-25T17:20:54.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Income.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Models\\Income.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\Models\\Income.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Models\\Income.cs",
-              "RelativeToolTip": "src\\Shared\\Models\\Income.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\RequestHelpers\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "src\\IncomeService\\RequestHelpers\\MappingProfiles.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\RequestHelpers\\MappingProfiles.cs",
+              "RelativeToolTip": "src\\IncomeService\\RequestHelpers\\MappingProfiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T17:00:25.34Z",
+              "WhenOpened": "2024-12-28T20:54:30.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IncomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Controllers\\IncomeController.cs",
-              "RelativeDocumentMoniker": "src\\IncomeService\\Controllers\\IncomeController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Controllers\\IncomeController.cs",
-              "RelativeToolTip": "src\\IncomeService\\Controllers\\IncomeController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwCsAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ExpenseUpdatedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Consumers\\ExpenseUpdatedConsumer.cs",
+              "RelativeDocumentMoniker": "src\\IncomeService\\Consumers\\ExpenseUpdatedConsumer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Consumers\\ExpenseUpdatedConsumer.cs",
+              "RelativeToolTip": "src\\IncomeService\\Consumers\\ExpenseUpdatedConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T15:31:26.823Z",
+              "WhenOpened": "2024-12-28T20:52:07.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExpenseCreatedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Consumers\\ExpenseCreatedConsumer.cs",
+              "RelativeDocumentMoniker": "src\\IncomeService\\Consumers\\ExpenseCreatedConsumer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Consumers\\ExpenseCreatedConsumer.cs",
+              "RelativeToolTip": "src\\IncomeService\\Consumers\\ExpenseCreatedConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T20:45:35.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Program.cs",
+              "RelativeDocumentMoniker": "src\\IncomeService\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Program.cs",
+              "RelativeToolTip": "src\\IncomeService\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswC8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T20:40:36.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExpenseDeleted.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
+              "RelativeToolTip": "src\\Shared\\Contracts\\Expenses\\ExpenseDeleted.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T20:15:30.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\GatewayService\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\GatewayService\\appsettings.json",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\GatewayService\\appsettings.json",
-              "RelativeToolTip": "src\\GatewayService\\appsettings.json",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-25T15:18:10.951Z"
+              "Title": "ExpenseDeletedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Consumers\\ExpenseDeletedConsumer.cs",
+              "RelativeDocumentMoniker": "src\\IncomeService\\Consumers\\ExpenseDeletedConsumer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Consumers\\ExpenseDeletedConsumer.cs",
+              "RelativeToolTip": "src\\IncomeService\\Consumers\\ExpenseDeletedConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T20:12:42.46Z",
+              "EditorCaption": ""
             }
           ]
         },
