@@ -24,3 +24,9 @@ export async function getBalance(){
     return fetchWrapper.get("income/balance");
 } 
 
+export async function getBudgetPercentage(){
+    return fetchWrapper.get("budget");
+} 
+
+
+

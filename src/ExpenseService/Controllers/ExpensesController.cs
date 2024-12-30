@@ -88,19 +88,6 @@ namespace ExpenseService.Controllers
             return Ok(expenses);
         }
 
-        [HttpGet("total")]
-        public async Task<ActionResult> GetTotal()
-        {
-            var sevenDays = DateTime.UtcNow.AddDays(-7);
-            var expenses = await _context.Expenses.Where(x => x.Date >  sevenDays).ToListAsync();
-            decimal sum = 0;
-            foreach(var expense in expenses)
-            {
-                sum += expense.Amount;
-            }
-            return Ok(sum);
-        }
-
         [HttpGet("monthly")]
         public async Task<ActionResult<decimal>> GetTotalExpense()
         {

@@ -95,19 +95,6 @@ namespace IncomeService.Controllers
             return Ok("Income successfully deleted!");
         }
 
-        [HttpGet("total")]
-        public async Task<ActionResult> GetTotal()
-        {
-            var month = DateTime.UtcNow.AddDays(30);
-            var incomes = await _context.Incomes.Where(x => x.DateReceived > month).ToListAsync();
-            decimal sum = 0;
-            foreach (var income in incomes)
-            {
-                sum += income.Amount;
-            }
-            return Ok(sum);
-        }
-
         [HttpGet("balance")]
         public async Task<ActionResult> GetBalance()
         {
@@ -115,11 +102,5 @@ namespace IncomeService.Controllers
             return Ok(balance.CurrentBalance);
         }
         
-        [HttpGet("expenses")]
-        public async Task<ActionResult<decimal>> GetTotalExpense()
-        {
-            var total = await _serviceHelper.GetTotalSinceLastPaycheck();
-            return Ok(total);
-        }
     }
 }
