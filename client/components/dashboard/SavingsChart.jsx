@@ -1,6 +1,5 @@
-'use client';
-import React, { useState } from 'react';
-import ReactApexChart from 'react-apexcharts';
+"use client";
+import React, { useState, useEffect } from 'react';
 
 const options = {
   colors: ['#FDE047', '#7d7d7d'],
@@ -30,7 +29,7 @@ const options = {
       },
     },
   ],
-  
+
   dataLabels: {
     enabled: false,
   },
@@ -87,9 +86,8 @@ const options = {
   },
 };
 
-
-
 const SavingsChart = () => {
+  const [Chart, setChart] = useState(null);
   const [state, setState] = useState({
     series: [
       {
@@ -103,14 +101,32 @@ const SavingsChart = () => {
     ],
   });
 
+  useEffect(() => {
+    // Dynamically import ReactApexChart
+    import('react-apexcharts')
+      .then((mod) => {
+        setChart(() => mod.default);
+      })
+      .catch((error) => {
+        console.error('Error loading react-apexcharts:', error);
+      });
+  }, []);
+
+  // Show loading until chart is loaded
+  if (!Chart) {
+    return <div>Loading Chart...</div>;
+  }
+
   return (
-    <ReactApexChart
-      options={options}
-      series={state.series}
-      type="bar"
-      height={350}
-      width={400}
-    />
+    <div>
+      <Chart
+        options={options}
+        series={state.series}
+        type="bar"
+        height={350}
+        width={400}
+      />
+    </div>
   );
 };
 

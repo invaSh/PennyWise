@@ -30,5 +30,11 @@ namespace ExpenseService.ServiceHelpers
                 .SumAsync(e => e.Amount);
             return total;
         }
+
+        public DateTime? GetYearlyDate()
+        {
+            var lastYear = DateTime.UtcNow.AddDays(-364);
+            return lastYear;
+        }
     }
 }

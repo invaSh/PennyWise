@@ -23,3 +23,7 @@ export async function deleteExpense(id){
 export async function getMonthlyExpenses(){
     return fetchWrapper.get("expenses/monthly");
 }
+
+export async function getYearlyExpenses(){
+    return fetchWrapper.get("expenses/yearly");
+}

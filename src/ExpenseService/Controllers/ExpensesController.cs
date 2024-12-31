@@ -95,5 +95,26 @@ namespace ExpenseService.Controllers
             return Ok(total);
         }
 
+        [HttpGet("yearly")]
+        public async Task<ActionResult<decimal>> GetTotalYearlyExpenses()
+        {
+            var year = _serviceHelper.GetYearlyDate();
+            var expenses = await _context.Expenses
+                .Where(x => x.Date >= year.Value)
+                .Select(x => new { x.Date, x.Amount })
+                .ToListAsync();
+
+            var monthly = expenses
+                .GroupBy(x => new {x.Date.Year, x.Date.Month})
+                .Select(m => new
+                {
+                    Month = m.Key.Month,
+                    Amount = m.Sum(x => x.Amount),
+                })
+                .OrderBy(o => o.Month)
+                .ToList();
+
+            return Ok(monthly);
+        }
     }
 }
