@@ -91,18 +91,17 @@ const SavingsChart = () => {
   const [state, setState] = useState({
     series: [
       {
-        name: 'Savings',
+        name: 'Expenses',
         data: [40, 70, 80, 60, 90, 50, 75],
       },
       {
-        name: 'Investments',
+        name: 'Income',
         data: [30, 50, 40, 60, 70, 65, 80],
       },
     ],
   });
 
   useEffect(() => {
-    // Dynamically import ReactApexChart
     import('react-apexcharts')
       .then((mod) => {
         setChart(() => mod.default);
@@ -112,7 +111,6 @@ const SavingsChart = () => {
       });
   }, []);
 
-  // Show loading until chart is loaded
   if (!Chart) {
     return <div>Loading Chart...</div>;
   }

@@ -52,5 +52,47 @@ namespace ExpenseService.Data
             await _context.SaveChangesAsync();
             Console.WriteLine("Database successfully seeded with random expenses.");
         }
+
+        public async Task SeedIncomesAsync()
+        {
+            if (_context.Incomes.Any())
+            {
+                Console.WriteLine("Database already contains income data. Skipping seeding.");
+                return;
+            }
+
+            var random = new Random();
+            var incomeTypes = new[] { "Salary", "Freelance" };
+
+            for (int monthOffset = 0; monthOffset < 12; monthOffset++)
+            {
+                var baseDate = DateTime.Now.AddMonths(-monthOffset);
+                var salaryIncome = new Income
+                {
+                    Amount = 1600, 
+                    DateReceived = new DateTime(baseDate.Year, baseDate.Month, 1).ToUniversalTime(),
+                    Type = "Salary"
+                };
+
+                _context.Incomes.Add(salaryIncome);
+
+                var freelanceCount = random.Next(1, 5);
+
+                for (int i = 0; i < freelanceCount; i++)
+                {
+                    var freelanceIncome = new Income
+                    {
+                        Amount = Math.Round((decimal)(random.NextDouble() * 1000 + 500), 2), 
+                        DateReceived = new DateTime(baseDate.Year, baseDate.Month, random.Next(1, 28)).ToUniversalTime(), 
+                        Type = "Freelance"
+                    };
+
+                    _context.Incomes.Add(freelanceIncome);
+                }
+            }
+
+            await _context.SaveChangesAsync();
+            Console.WriteLine("Database successfully seeded with random incomes.");
+        }
     }
 }

@@ -62,15 +62,15 @@ services:
             - ASPNETCORE_URLS=http://+:80   
         ports:
             - 6002:80
-    heatmap-svc:
-        image: heatmap-svc:v1.0.0-development
+    analytics-svc:
+        image: analytics-svc:v1.0.0-development
         build:
             context: .
-            dockerfile: src/HeatmapService/Dockerfile
+            dockerfile: src/AnalyticsService/Dockerfile
         environment:
             - ASPNETCORE_ENVIRONMENT=Development
             - ASPNETCORE_URLS=http://+:80   
-            - ConnectionStrings__HeatmapConnection=Server=postgres:5432;Database=heatmaps;Username=postgres;Password=123456
+            - ConnectionStrings__DefaultConnection=Server=postgres:5432;Database=analytics;Username=postgres;Password=123456
         ports:
             - 4004:80
         depends_on:

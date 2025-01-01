@@ -1,6 +1,0 @@
-@HeatmapService_HostAddress = http://localhost:5048
-
-GET {{HeatmapService_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -49,5 +49,6 @@ using (var scope = app.Services.CreateScope())
 
     var seeder = new DataSeeder(context);
     await seeder.SeedExpensesAsync();
+    await seeder.SeedIncomesAsync();
 }
 app.Run();
