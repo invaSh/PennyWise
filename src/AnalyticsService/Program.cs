@@ -1,6 +1,8 @@
 
+using AnalyticsService.Consumers;
 using AnalyticsService.Data;
 using AnalyticsService.Models;
+using AnalyticsService.Services;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,15 +13,17 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<AnalyticsDbContext>
     (o => o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-//builder.Services.AddMassTransit(x =>
-//{
-//    x.AddConsumersFromNamespaceContaining<ExpenseCreatedConsumer>();
-//    x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("heatmap", false));
-//    x.UsingRabbitMq((context, cfg) =>
-//    {
-//        cfg.ConfigureEndpoints(context);
-//    });
-//});
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumersFromNamespaceContaining<ExpenseCreatedConsumer>();
+    x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("analytics", false));
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.ConfigureEndpoints(context);
+    });
+});
+builder.Services.AddScoped<ServiceHelper>();
+
 
 var app = builder.Build();
 

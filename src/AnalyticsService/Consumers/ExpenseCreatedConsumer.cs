@@ -1,28 +1,26 @@
-﻿using AutoMapper;
-using IncomeService.Data;
-using IncomeService.Models;
+﻿using AnalyticsService.Data;
+using AnalyticsService.Models;
+using AutoMapper;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Shared.Contracts.Expenses;
 
-namespace IncomeService.Consumers
+namespace AnalyticsService.Consumers
 {
     public class ExpenseCreatedConsumer : IConsumer<ExpenseCreated>
     {
-        private readonly IncSvcDbContext _context;
+        private readonly AnalyticsDbContext _context;
         private readonly IMapper _mapper;
-        public ExpenseCreatedConsumer(IncSvcDbContext context, IMapper mapper)
+        public ExpenseCreatedConsumer(AnalyticsDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
         }
+
         public async Task Consume(ConsumeContext<ExpenseCreated> context)
         {
+            Console.WriteLine("====>Consuming expense with ID: " + context.Message.Id);
             var balance = await _context.Balances.SingleOrDefaultAsync();
-            var lastPayDate = await _context.Incomes
-                .OrderByDescending(i => i.DateReceived)
-                .Select(i => i.DateReceived)
-                .FirstOrDefaultAsync();
             var expense = _mapper.Map<Expense>(context.Message);
             _context.Expenses.Add(expense);
             balance.CurrentBalance -= expense.Amount;
