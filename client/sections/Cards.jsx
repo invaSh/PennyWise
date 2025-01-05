@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '@/components/dashboard/Card';
-import { getBudgetPercentage } from '@/app/actions/incomeActions';
-import { getMonthlyExpenses } from '@/app/actions/expenseActions';
+import { getBudgetPercentage } from '@/app/actions/analyticsActions';
+import { getMonthlyExpenses } from '@/app/actions/analyticsActions';
 import { getBalance } from '@/app/actions/analyticsActions';
 
 async function Cards() {

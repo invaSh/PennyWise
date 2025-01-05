@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { getYearlyExpenses } from '@/app/actions/expenseActions';
+import { getYearlyExpenses } from '@/app/actions/analyticsActions';
 
 export default function ExpensesChart() {
   const [Chart, setChart] = useState(null);

@@ -48,5 +48,20 @@ namespace AnalyticsService.Services
             }
             return budgetUtilization;
         }
+
+        public async Task<decimal> GetTotalSinceLastPaycheck()
+        {
+            var lastPayDate = await GetLastPayDate();
+            var total = await _context.Expenses
+                .Where(e => e.Date >= lastPayDate)
+                .SumAsync(e => e.Amount);
+            return total;
+        }
+
+        public DateTime? GetYearlyDate()
+        {
+            var lastYear = DateTime.UtcNow.AddDays(-364);
+            return lastYear;
+        }
     }
 }
