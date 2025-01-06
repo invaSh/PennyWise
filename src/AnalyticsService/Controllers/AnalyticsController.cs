@@ -1,5 +1,6 @@
 ﻿using AnalyticsService.Data;
 using AnalyticsService.Services;
+using MassTransit.Serialization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -52,10 +53,11 @@ namespace AnalyticsService.Controllers
                 .GroupBy(x => new { x.Date.Year, x.Date.Month })
                 .Select(m => new
                 {
-                    Month = m.Key.Month,
+                    Date = new DateTime(m.Key.Year, m.Key.Month, 1).Date,
+                    Month = new DateTime(m.Key.Year, m.Key.Month, 1).ToString("MMMM"),
                     Amount = m.Sum(x => x.Amount),
                 })
-                .OrderBy(o => o.Month)
+                .OrderBy(o => o.Date)
                 .ToList();
 
             return Ok(monthly);

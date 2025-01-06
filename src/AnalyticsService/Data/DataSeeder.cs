@@ -66,10 +66,19 @@ namespace AnalyticsService.Data
             for (int monthOffset = 0; monthOffset < 12; monthOffset++)
             {
                 var baseDate = DateTime.Now.AddMonths(-monthOffset);
+                var salaryDate = new DateTime(baseDate.Year, baseDate.Month, 1).ToUniversalTime();
+
+                // Ensure the date is not in the future
+                if (salaryDate > DateTime.UtcNow)
+                {
+                    Console.WriteLine("Skipping future date: " + salaryDate);
+                    continue;
+                }
+
                 var salaryIncome = new Income
                 {
                     Amount = 1600,
-                    DateReceived = new DateTime(baseDate.Year, baseDate.Month, 1).ToUniversalTime(),
+                    DateReceived = salaryDate,
                     Type = "Salary"
                 };
 
@@ -79,10 +88,19 @@ namespace AnalyticsService.Data
 
                 for (int i = 0; i < freelanceCount; i++)
                 {
-                    var freelanceIncome = new Income
+                    var randomDay = random.Next(1, 28);
+                    var freelanceDate = new DateTime(baseDate.Year, baseDate.Month, randomDay).ToUniversalTime();
+
+                    if (freelanceDate > DateTime.UtcNow)
                     {
+                        Console.WriteLine("Skipping future date: " + freelanceDate);
+                        continue;
+                    }
+
+                    var freelanceIncome = new Income
+                    {   Source = "Source " + (i+1),
                         Amount = Math.Round((decimal)(random.NextDouble() * 1000 + 500), 2),
-                        DateReceived = new DateTime(baseDate.Year, baseDate.Month, random.Next(1, 28)).ToUniversalTime(),
+                        DateReceived = freelanceDate,
                         Type = "Freelance"
                     };
 
@@ -93,5 +111,6 @@ namespace AnalyticsService.Data
             await _context.SaveChangesAsync();
             Console.WriteLine("Database successfully seeded with random incomes.");
         }
+
     }
 }

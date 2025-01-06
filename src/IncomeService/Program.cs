@@ -55,8 +55,8 @@ using (var scope = app.Services.CreateScope())
         Console.WriteLine("Balance table already contains data. No seeding required.");
     }
 
-    var seeder = new DataSeeder(context);
-    await seeder.SeedIncomesAsync();
+    //var seeder = new DataSeeder(context);
+    //await seeder.SeedIncomesAsync();
 }
 app.Run();
 

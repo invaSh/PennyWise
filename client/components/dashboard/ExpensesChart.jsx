@@ -12,6 +12,8 @@ export default function ExpensesChart() {
       },
     ],
   });
+  const [highestValue, setHighestValue] = useState(0);
+
   const [yearly, setYearly] = useState([]);
   const options = {
     legend: {
@@ -101,20 +103,7 @@ export default function ExpensesChart() {
     },
     xaxis: {
       type: 'category',
-      categories: [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
-        'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec',
-      ],
+      categories: state.categories, 
       axisBorder: {
         show: false,
       },
@@ -137,7 +126,7 @@ export default function ExpensesChart() {
         },
       },
       min: 0,
-      max: 1200,
+      max: highestValue,
       labels: {
         style: {
           colors: '#FDE047',
@@ -152,21 +141,22 @@ export default function ExpensesChart() {
     const getYearly = async () => {
       try {
         const data = await getYearlyExpenses();
-
-        const months = Array(12).fill(0);
-        data.forEach((entry) => {
-          const monthIndex = entry.month - 1;
-          months[monthIndex] = entry.amount;
-        });
+        
+        const months = data.map(item => item.month); 
+        const amounts = data.map(item => item.amount);
+        setHighestValue(Math.max(...amounts));
         setState({
           series: [
             {
               name: 'Expenses',
-              data: months,
+              data: amounts,
             },
           ],
+          categories: months,
         });
 
+        options.xaxis.categories = months;
+        
         setYearly(data);
       } catch (error) {
         console.error('Error fetching yearly expenses:', error);
