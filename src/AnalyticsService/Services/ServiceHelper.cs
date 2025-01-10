@@ -77,5 +77,13 @@ namespace AnalyticsService.Services
             var lastYear = currentMonth.AddMonths(-12);
             return lastYear;
         }
+
+        public DateTime? GetHalfYearDate()
+        {
+            var currentMonth = new DateTime(DateTime.UtcNow.Year, DateTime.UtcNow.Month, 1);
+            currentMonth = DateTime.SpecifyKind(currentMonth, DateTimeKind.Utc);
+            var sixMonths = currentMonth.AddMonths(-6);
+            return sixMonths;
+        }
     }
 }

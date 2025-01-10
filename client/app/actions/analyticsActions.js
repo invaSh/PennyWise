@@ -15,3 +15,7 @@ export async function getBudgetPercentage(){
 export async function getYearlyExpenses(){
   return fetchWrapper.get("analytics/yearly");
 }
+
+export async function getHalfYear(){
+  return fetchWrapper.get("analytics/half-year");
+}

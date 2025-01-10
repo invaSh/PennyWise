@@ -63,5 +63,44 @@ namespace AnalyticsService.Controllers
             return Ok(monthly);
         }
 
+        [HttpGet("half-year")]
+        public async Task<ActionResult<decimal>> GetHalfYearExpenses()
+        {
+            var sixMonths = _serviceHelper.GetHalfYearDate();
+            var incomes = await _context.Incomes
+                .Where(x => x.DateReceived >= sixMonths.Value)
+                .ToListAsync();
+
+            var monthlyIncomes = incomes
+                .GroupBy(x => new { x.DateReceived.Year, x.DateReceived.Month })
+                .Select(m => new
+                {
+                    Date = new DateTime(m.Key.Year, m.Key.Month, 1).Date,
+                    Month = new DateTime(m.Key.Year, m.Key.Month, 1).ToString("MMMM"),
+                    Amount = m.Sum(x => x.Amount),
+                })
+                .OrderBy(x => x.Date);
+
+            var expenses = await _context.Expenses
+                .Where(x => x.Date >= sixMonths.Value)
+                .ToListAsync();
+
+            var monthlyExpenses = expenses
+                .GroupBy(x => new { x.Date.Year, x.Date.Month })
+                .Select(m => new
+                {
+                    Date = new DateTime(m.Key.Year, m.Key.Month, 1).Date,
+                    Month = new DateTime(m.Key.Year, m.Key.Month, 1).ToString("MMMM"),
+                    Amount = m.Sum(x => x.Amount),
+                });
+
+            var list = new {};
+
+            return Ok(new
+            {
+                Income = monthlyIncomes   ,
+                Expense = monthlyExpenses
+            });
+        }
     }
 }

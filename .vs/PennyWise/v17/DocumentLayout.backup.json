@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\incomeservice\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0705597B-3BC4-480D-A566-C14BAF2E8E19}|src\\IncomeService\\IncomeService.csproj|solutionrelative:src\\incomeservice\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\analyticsservice\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|solutionrelative:src\\analyticsservice\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\analyticsservice\\data\\analyticsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|solutionrelative:src\\analyticsservice\\data\\analyticsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\analyticsservice\\controllers\\analyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|solutionrelative:src\\analyticsservice\\controllers\\analyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\analyticsservice\\services\\servicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|solutionrelative:src\\analyticsservice\\services\\servicehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\analyticsservice\\controllers\\analyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|solutionrelative:src\\analyticsservice\\controllers\\analyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|c:\\users\\admin\\desktop\\projekte\\.net_microservices_next.js_pennywise\\pennywise\\src\\analyticsservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC117911-9312-4227-80F4-97DC1961395E}|src\\AnalyticsService\\AnalyticsService.csproj|solutionrelative:src\\analyticsservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +22,32 @@
       "DocumentGroups": [
         {
           "DockedHeight": 275,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Data\\DataSeeder.cs",
-              "RelativeDocumentMoniker": "src\\IncomeService\\Data\\DataSeeder.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\IncomeService\\Data\\DataSeeder.cs",
-              "RelativeToolTip": "src\\IncomeService\\Data\\DataSeeder.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAswF8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ServiceHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Services\\ServiceHelper.cs",
+              "RelativeDocumentMoniker": "src\\AnalyticsService\\Services\\ServiceHelper.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Services\\ServiceHelper.cs",
+              "RelativeToolTip": "src\\AnalyticsService\\Services\\ServiceHelper.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAEwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T15:41:02.781Z",
+              "WhenOpened": "2025-01-06T16:44:32.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Program.cs",
+              "RelativeDocumentMoniker": "src\\AnalyticsService\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Program.cs",
+              "RelativeToolTip": "src\\AnalyticsService\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T16:21:23.412Z",
               "EditorCaption": ""
             },
             {
@@ -51,54 +56,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Data\\DataSeeder.cs",
-              "RelativeDocumentMoniker": "src\\AnalyticsService\\Data\\DataSeeder.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Data\\DataSeeder.cs",
-              "RelativeToolTip": "src\\AnalyticsService\\Data\\DataSeeder.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAowHAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T15:31:12.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnalyticsDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Data\\AnalyticsDbContext.cs",
-              "RelativeDocumentMoniker": "src\\AnalyticsService\\Data\\AnalyticsDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Data\\AnalyticsDbContext.cs",
-              "RelativeToolTip": "src\\AnalyticsService\\Data\\AnalyticsDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T15:31:10.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Services\\ServiceHelper.cs",
-              "RelativeDocumentMoniker": "src\\AnalyticsService\\Services\\ServiceHelper.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Services\\ServiceHelper.cs",
-              "RelativeToolTip": "src\\AnalyticsService\\Services\\ServiceHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T15:06:59.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AnalyticsController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Controllers\\AnalyticsController.cs",
               "RelativeDocumentMoniker": "src\\AnalyticsService\\Controllers\\AnalyticsController.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\projekte\\.NET_Microservices_Next.js_PennyWise\\PennyWise\\src\\AnalyticsService\\Controllers\\AnalyticsController.cs",
               "RelativeToolTip": "src\\AnalyticsService\\Controllers\\AnalyticsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAA3wDwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T15:06:55.872Z",
+              "WhenOpened": "2025-01-06T16:05:37.537Z",
               "EditorCaption": ""
             }
           ]

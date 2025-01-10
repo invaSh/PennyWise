@@ -1,6 +1,23 @@
-"use client";
+'use client';
 import React, { useState, useEffect } from 'react';
+import { getHalfYear } from '@/app/actions/analyticsActions';
 
+const SavingsChart = () => {
+  const [Chart, setChart] = useState(null);
+  const [state, setState] = useState({
+    series: [
+      {
+        name: 'Expenses',
+        data: [],
+      },
+      {
+        name: 'Income',
+        data: [],
+      },
+    ],
+  });
+  const [maxVal, setMaxVal] = useState(0);
+  
 const options = {
   colors: ['#FDE047', '#7d7d7d'],
   chart: {
@@ -39,10 +56,10 @@ const options = {
     position: 'top',
     labels: {
       style: {
-        fontFamily: 'Red Hat Display, sans-serif', // Apply the font to the legend
+        fontFamily: 'Red Hat Display, sans-serif', 
         fontSize: '14px',
         fontWeight: 400,
-        colors: ['#FDE047'], // Set the font color for the legend labels
+        colors: ['#FDE047'], 
       },
     },
   },
@@ -50,14 +67,14 @@ const options = {
   tooltip: {
     theme: 'dark',
     style: {
-      fontFamily: 'Red Hat Display, sans-serif', // Apply the font to the tooltip
+      fontFamily: 'Red Hat Display, sans-serif', 
       fontSize: '12px',
       fontWeight: 400,
     },
   },
 
   xaxis: {
-    categories: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    categories: state.categories,
     labels: {
       style: {
         colors: '#FDE047',
@@ -75,7 +92,7 @@ const options = {
       },
     },
     min: 0,
-    max: 100,
+    max: maxVal,
     labels: {
       style: {
         colors: '#FDE047',
@@ -86,20 +103,35 @@ const options = {
   },
 };
 
-const SavingsChart = () => {
-  const [Chart, setChart] = useState(null);
-  const [state, setState] = useState({
-    series: [
-      {
-        name: 'Expenses',
-        data: [40, 70, 80, 60, 90, 50, 75],
-      },
-      {
-        name: 'Income',
-        data: [30, 50, 40, 60, 70, 65, 80],
-      },
-    ],
-  });
+  useEffect(() => {
+    const getHalfYearData = async () => {
+      try {
+        const { income, expense } = await getHalfYear();
+        const months = income.map((m) => m.month);
+        const incomeAmounts = income.map((a) => a.amount);
+        const expenseAmounts = expense.map((a) => a.amount);
+        setMaxVal(Math.max(...incomeAmounts));
+        setState({
+          series: [
+          {
+            name: 'Expenses',
+            data: expenseAmounts,
+          },
+          {
+            name: 'Income',
+            data: incomeAmounts,
+          },
+        ],
+        categories: months
+      })
+
+      } catch (e) {
+        console.error('error =>', e);
+      }
+    };
+
+    getHalfYearData();
+  }, []);
 
   useEffect(() => {
     import('react-apexcharts')
