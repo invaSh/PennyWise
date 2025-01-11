@@ -107,6 +107,8 @@ const options = {
     const getHalfYearData = async () => {
       try {
         const { income, expense } = await getHalfYear();
+        console.log(expense);
+        
         const months = income.map((m) => m.month);
         const incomeAmounts = income.map((a) => a.amount);
         const expenseAmounts = expense.map((a) => a.amount);

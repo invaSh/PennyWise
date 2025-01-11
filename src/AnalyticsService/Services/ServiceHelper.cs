@@ -38,13 +38,10 @@ namespace AnalyticsService.Services
             var expenses = await _context.Expenses
                 .Where(x => x.Date >= lastPayDate)
                 .SumAsync(e => e.Amount);
-            _logger.LogInformation("====>Expenses Amount: {Expenses}", expenses);
             var balance = await _context.Balances.SingleOrDefaultAsync();
             var monthlyIncome = await _context.Incomes
                 .Where(x => x.DateReceived >= lastPayDate)
                 .SumAsync(e => e.Amount);
-            _logger.LogInformation("====>Monthly Income Amount: {MonthlyIncome}", monthlyIncome);
-
             decimal budgetUtilization = 0;
             if (balance.CurrentBalance != 0)
             {
