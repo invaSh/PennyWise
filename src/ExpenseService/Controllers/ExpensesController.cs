@@ -87,5 +87,18 @@ namespace ExpenseService.Controllers
             if (expenses.Count <= 0) return NotFound("No expenses where found!");
             return Ok(expenses);
         }
+
+        [HttpGet("weekly")]
+        public async Task<ActionResult> GetWeeklyExpenses()
+        {
+            var week = _serviceHelper.WeeklyDate();
+            var expenses = await _context.Expenses
+                .Where(x => x.Date >= week.Value)
+                .OrderByDescending(x => x.Date)
+                .ToListAsync();
+            if (expenses.Count == 0) return NotFound("No Expenses");
+            return Ok(expenses);
+        }
+
     }
 }

@@ -31,6 +31,12 @@ namespace ExpenseService.ServiceHelpers
             return total;
         }
 
+        public DateTime? WeeklyDate()
+        {
+            var week = DateTime.UtcNow.AddDays(-7);
+            return week;
+        }
+
         public DateTime? GetYearlyDate()
         {
             var lastYear = DateTime.UtcNow.AddDays(-364);
