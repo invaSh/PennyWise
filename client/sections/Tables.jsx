@@ -5,7 +5,6 @@ function Tables() {
   return (
     <div className="flex justify-center gap-5">
         <ExpensesTable />
-        <GoalsTable />
     </div>
   );
 }

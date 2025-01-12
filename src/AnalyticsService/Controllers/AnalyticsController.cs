@@ -103,17 +103,5 @@ namespace AnalyticsService.Controllers
             });
         }
 
-        [HttpGet("total-test")]
-        public async Task<ActionResult<decimal>> GetTotal()
-        {
-            var lastPayDate = await _serviceHelper.GetLastPayDate();
-            var expenses = await _context.Expenses
-                .Where(x => x.Date >= lastPayDate)
-                .SumAsync(e => e.Amount);
-            var monthlyIncome = await _context.Incomes
-                .Where(x => x.DateReceived >= lastPayDate)
-                .SumAsync(e => e.Amount);
-            return monthlyIncome;
-        }
     }
 }
